@@ -201,7 +201,7 @@ Aşağıdakileri yapmak için ortalamaKelimeSayisi işlevini kullanın:
 */
 
 function ortalamaKelimeSayisi(orijinalTatlar){
-  /*kod buraya*/
+  /*kod buraya.*/
 }
 
 
