@@ -93,7 +93,7 @@ return dizi
 
 /* Cörev 4:
 
-Hoooppppalaa! orijinalTatlar dizisinde artık 26 aroma var! Göreviniz, dizinin sonundan bir öğeyi kaldırmaktır.
+Hoooppppalaa! orijinalTatlar .dizisinde artık 26 aroma var! Göreviniz, dizinin sonundan bir öğeyi kaldırmaktır.
 
 Aşağıdakileri yapmak için sonCesitiKaldir işlevini kullanın:
    1. Bir dizi alın
