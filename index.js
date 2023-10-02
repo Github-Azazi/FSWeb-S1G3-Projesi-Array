@@ -200,10 +200,17 @@ Aşağıdakileri yapmak için ortalamaKelimeSayisi işlevini kullanın:
    Örneğin: ortalamaKelimeSayisi(orijinalTatlar) 0 ile 2 arasında bir sayı döndürmelidir.
 */
 
-function ortalamaKelimeSayisi(orijinalTatlar){
-  /*kod buraya.*/
+function ortalamaKelimeSayisi(orijinalTatlar) {
+  let toplamKelimeSayisi = 0;
+  for(let i = 0; i < orijinalTatlar.length; i++) {
+      let kelimeSayisi = orijinalTatlar[i].split(' ').length;
+      toplamKelimeSayisi += kelimeSayisi;
+  }
+  let ortalama = toplamKelimeSayisi / orijinalTatlar.length;
+  return ortalama;
 }
 
+//console.log(ortalamaKelimeSayisi(orijinalTatlar)); 
 
 /* ALIŞTIRMA 2:
 Firma mevcut tatların yanında artık mevsimlik lezzetler ve hatta bölgesel lezzetler de sunmaktadır. Toplam 25 lezzet aromasını
@@ -218,9 +225,21 @@ Aşağıdakileri yapmak için rastgeleTatlar işlevini ve yeni dizileri kullanı
 */
 
 
-function rastgeleTatlar(/*kod buraya*/){
-  /*kod buraya*/
+function rastgeleTatlar(orijinalTatlar, yeniTatlar, mevsimlikTatlar, bolgeselTatlar) {
+  let tumTatlar = [...orijinalTatlar, ...yeniTatlar, ...mevsimlikTatlar, ...bolgeselTatlar];
+  let rastgeleTatlar = [];
+  for (let i = 0; i < 25; i++) {
+    let rastgeleIndex = Math.floor(Math.random() * tumTatlar.length);
+    rastgeleTatlar.push(tumTatlar[rastgeleIndex]);
+  }
+  return rastgeleTatlar;
 }
+
+let yeniTatlar = ["Badem", "Ballı Badem", "Fıstık Ezmesi", "Profiterol", "Madlen Çikolata"];
+let mevsimlikTatlar = ["Pekan", "Kaju", "Çikolatalı Mousse", "Fransız Vanilyası", "Yumurta", "Alman çikolatası", "Kek üzerine krema", "Hindistan Cevizi", "Kaymaklı Biskuvi", "Beyaz Çikolata", "Mango"];
+let bolgeselTatlar = ["Kaymak", "Karpuz", "Karadut", "Turunç", "Portakal", "Yogurt", "Krem Peynir", "Kakao", "Karamel macchiato", "Kuru üzüm", "Peynir", "Karamel"];
+
+console.log(rastgeleTatlar(orijinalTatlar, yeniTatlar, mevsimlikTatlar, bolgeselTatlar));
 
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
 // const yeniTatlar = [
@@ -259,6 +278,16 @@ function rastgeleTatlar(/*kod buraya*/){
 // "Peynir",
 // "Karamel"
 // ]
+
+
+
+
+
+
+
+
+
+
 
 
 /* Lütfen bu satırın altındaki hiçbir şeyi değiştirmeyin */
