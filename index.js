@@ -213,7 +213,7 @@ function ortalamaKelimeSayisi(orijinalTatlar) {
 //console.log(ortalamaKelimeSayisi(orijinalTatlar)); 
 
 /* ALIŞTIRMA 2:
-Firma mevcut tatların yanında artık mevsimlik lezzetler ve hatta bölgesel lezzetler de sunmaktadır. Toplam 25 lezzet aromasını
+Firma mevcut tatların yanında artık mevsimlik lezzetler ve hatta bölgesel lezzetler de sunmaktadır. Toplam 25 lezzet aromasını,
 orijinalTatlar, yeniTatlar, mevsimlikTatlar ve bolgeselTatlar'dan rastgele seçecek ve bunu rastgeleTatlar adlı bir dizide saklayan bir fonksiyon yazın.
 
 Aşağıdakileri yapmak için rastgeleTatlar işlevini ve yeni dizileri kullanın:
@@ -278,15 +278,6 @@ console.log(rastgeleTatlar(orijinalTatlar, yeniTatlar, mevsimlikTatlar, bolgesel
 // "Peynir",
 // "Karamel"
 // ]
-
-
-
-
-
-
-
-
-
 
 
 
